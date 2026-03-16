@@ -1,0 +1,30 @@
+body {
+    background-color: rgb(43, 42, 117);
+    color: white; 
+}
+.profile-img{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid white;
+}
+.text-justify{
+    text-align: justify;
+}
+.typing-loop{
+    width:0;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(20) forwards, blink 0.5s step-end infinite;
+}
+@keyframes typing {
+    from { width: 0; }
+    to { width: 15ch; }
+}
+@keyframes blink {
+    0%, 50% { border-color: transparent; }
+}
+html{
+    scroll-behavior: smooth;
+}
